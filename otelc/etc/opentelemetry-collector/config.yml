@@ -15,9 +15,9 @@ exporters:
   otlp:
     endpoint: localhost:4317  # gRPC endpoint
     tls:
-      cert_file: /etc/flightctl/certs/otel.crt
-      key_file: /etc/flightctl/certs/otel.key
-      ca_file: /etc/flightctl/certs/ca.crt
+      cert_file: /etc/otel3/cert.pem
+      key_file: /etc/otel3/key.pem
+      ca_file: /etc/otel3/ca.crt
       insecure: false
       insecure_skip_verify: true  # only if using self-signed certs
 
